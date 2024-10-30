@@ -23,6 +23,29 @@ day.csv have the following fields:
 	- casual: count of casual users
 	- registered: count of registered users
 	- cnt: count of total rental bikes including both casual and registered
+
+### Libraries Used
+- **NumPy**: For numerical operations.
+- **Pandas**: For data manipulation and analysis.
+- **Seaborn** and **Matplotlib**: For data visualization.
+- **scikit-learn (sklearn)**: For preprocessing, train-test splitting, feature selection, and model evaluation.
+- **statsmodels**: For statistical analysis, particularly in evaluating multicollinearity.
+
+### Dataset Description
+This section provides an overview of the dataset used in the analysis, covering various attributes and their roles in the analysis.
+
+### Data Preprocessing
+- **Scaling**: `MinMaxScaler` is used to scale the features.
+- **Train-Test Split**: The dataset is divided into training and testing subsets.
+- **Multicollinearity Management**: Variance Inflation Factor (VIF) is calculated to manage multicollinearity among features.
+
+### Feature Selection
+- **Recursive Feature Elimination (RFE)**: Utilized to identify the most impactful features for the model.
+
+### Model Training and Evaluation
+- **Model**: Linear Regression is used to predict the target variable.
+- **Metrics**: Evaluation is performed using Mean Squared Error (MSE) and R² Score to assess model performance.
+"""
 	
 =========================================
 License
